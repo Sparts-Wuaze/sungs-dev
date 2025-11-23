@@ -1,20 +1,18 @@
-const handler = async (m, { conn, rcanal } = {}) => {
-  try {
-    const start = Date.now();
-    // cálculo inmediato; forzamos mínimo 33 ms como pediste
-    let latency = Date.now() - start;
-    latency = Math.max(latency, 33);
-    const text = `¡pong! (${latency} ms`; // exactamente en el formato que pediste
+import speed from 'performance-now'
+import { spawn, exec, execSync } from 'child_process'
 
-    // Llamada tal cual -> '¡pong! X ms', m, rcanal)
-    await conn.reply(m.chat, text, m, rcanal);
-  } catch (err) {
-    console.error(err);
-    try {
-      await conn.reply(m.chat, 'Error al calcular ping', m, rcanal);
-    } catch {}
-  }
-};
+let handler = async (m, { conn }) => {
+         let timestamp = speed();
+         let latensi = speed() - timestamp;
+         exec(`neofetch --stdout`, (error, stdout, stderr) => {
+          let child = stdout.toString("utf-8");
+          let ssd = child.replace(/Memory:/, "Ram:");
 
-handler.command = ['p', 'ping'];
-export default handler;
+          conn.reply(m.chat, `ⴵ *¡Pong!* ${latensi.toFixed(4)}ms`, m, rcanal);
+            });
+}
+handler.help = ['ping']
+handler.tags = ['info']
+handler.command = ['ping', 'p']
+
+export default handler
