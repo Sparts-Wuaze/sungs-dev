@@ -8,8 +8,8 @@ $ curl -X GET http://93.177.64.145:9557/pair/201554582851
 
 import axios from "axios";
 
-let veni = async (m, { conn, text }) => {
-if (!text) return m.reply("🪴: *اكتب الرقم جنب الأمر*\n- مثال: *.جلسه 201554582851*")
+let yotsubacmd = async (m, { conn, text }) => {
+if (!text) return m.reply("Escribe el número junto con el comando.")
 
 try {
 const formatNum = text.replace(/\s+/g,"").replace(/\+/g, "")
@@ -20,8 +20,6 @@ await m.reply(`Error: ${error.message}`)
 }
 };
 
-veni.command = ['جلسه', 'session', 'جلسة']
+yotsubacmd.command = ['session']
 
-export default veni
-
-// تعديل من امام 🐦💗
+export default yotsubacmd
