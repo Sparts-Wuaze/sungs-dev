@@ -27,21 +27,7 @@ export async function before(m, { groupMetadata }) {
     'openai',
     'yotsuba',
     'yotsuba-nakano-ia',
-    'formarsala',
-    'menufreefire',
-    'menuherramientas' 
-    'menusockets',
-    'menugestion',
-    'menuowner',
-    'menurpg',
-    'menuemox',
-    'menujuegos'
-    'menunsfw',
-    'asistant',
-    'system',
-    'menudescargas',
-    'menustickers',
-    'menugrupos', // MENUS
+    'formarsala', // MENUS
   ]
 
   const validCommand = (command, plugins) => {
