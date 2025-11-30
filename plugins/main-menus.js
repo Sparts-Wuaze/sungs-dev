@@ -18,7 +18,7 @@ const dev = `
 const menuConfig = [
   { cmd: 'menufreefire', name: 'FREE-FIRE', text: `*꒰⌢◌⃘࣭ٜ࣪࣪࣪۬☪︎︎︎︎̸ ✎ ꒱ 𐔌 FREE-FIRE 𐦯*
 > *𑁍⃪࣭۪ٜ ❏ #purgatorio*
-> *𑁍⃪࣭۪ٜ ❏ #kalafari*
+> *𑁍⃪࣭۪ٜ ❏ #kalahari*
 > *𑁍⃪࣭۪ٜ ❏ #alpes*
 > *𑁍⃪࣭۪ٜ ❏ #bermuda*
 > *𑁍⃪࣭۪ٜ ❏ #formarsala*
