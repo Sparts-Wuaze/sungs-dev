@@ -8,7 +8,7 @@ export async function before(m, { groupMetadata, conn }) {
     'setbanner', 'setname', 'setcurrency', 'setmoneda', 'inspect', 'ai', 'bard', 'chatgpt',
     'dalle', 'flux', 'gemini', 'purgatorio', 'kalahari', 'bermuda', 'alpes', 'ia', 'iavoz',
     'luminai', 'openai', 'yotsuba', 'yotsuba-nakano-ia', 'formarsala',
-    'menufreefire', 'menusystem', 'menuherramientas', 'menudescargas', 'menusockets',
+    'menufreefire', 'menusystem', 'menuherramientas', 'menudescargas', 'menusockets', 'c', 'obtener',
     'menuassistant', 'menujuegos', 'menugestion', 'menurpg', 'menugrupos', 'menuowner',
     'menunsfw', 'menuemox', 'menustickers'
   ]
