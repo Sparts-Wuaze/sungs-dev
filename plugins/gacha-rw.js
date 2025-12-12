@@ -1,5 +1,6 @@
 /* Código criado por Félix ofc 
 Por favor, respeite os créditos ou faça uma doação :D
+☆ GitHub: https://github.com/FELIX-OFC
 */
 
 import fs from 'fs'
